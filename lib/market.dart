@@ -25,7 +25,7 @@ class market extends StatelessWidget {
                     child: ListTile(
                       leading: Image.asset("assets/images/btc.png"),
                       title: Row(
-                        children: [
+                        children: const [
                           Text(
                             "BTC/USDT",
                             style: TextStyle(
@@ -47,7 +47,7 @@ class market extends StatelessWidget {
                           ),
                         ],
                       ),
-                      subtitle: Text(
+                      subtitle: const Text(
                         "SON 24 SAAT",
                         style: TextStyle(
                           color: Colors.grey,
@@ -55,18 +55,18 @@ class market extends StatelessWidget {
                           fontFamily: "Poppins",
                         ),
                       ),
-                      trailing: Icon(
+                      trailing: const Icon(
                         Icons.search,
                         size: 25,
                       ),
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 20,
                   ),
                   Container(
-                    margin: EdgeInsets.only(left: 17),
-                    child: Text(
+                    margin: const EdgeInsets.only(left: 17),
+                    child: const Text(
                       "Coinler",
                       style: TextStyle(
                         color: Colors.black,
@@ -77,7 +77,7 @@ class market extends StatelessWidget {
               ),
               pinned: true,
               floating: false,
-              bottom: TabBar(
+              bottom: const TabBar(
                 labelColor: Colors.black,
                 labelStyle: TextStyle(
                   fontFamily: "Poppins",
@@ -117,7 +117,7 @@ class market extends StatelessWidget {
         body: TabBarView(
           children: [
             SingleChildScrollView(
-              physics: BouncingScrollPhysics(),
+              physics: const BouncingScrollPhysics(),
               child: Padding(
                 padding: const EdgeInsets.all(30.0),
                 child: Column(
@@ -307,7 +307,7 @@ class market extends StatelessWidget {
               ),
             ),
             SingleChildScrollView(
-              physics: BouncingScrollPhysics(),
+              physics: const BouncingScrollPhysics(),
               child: Padding(
                 padding: const EdgeInsets.all(30.0),
                 child: Column(
@@ -417,7 +417,7 @@ class market extends StatelessWidget {
               ),
             ),
             SingleChildScrollView(
-              physics: BouncingScrollPhysics(),
+              physics: const BouncingScrollPhysics(),
               child: Padding(
                 padding: const EdgeInsets.all(30.0),
                 child: Column(
@@ -517,7 +517,7 @@ class market extends StatelessWidget {
               ),
             ),
             SingleChildScrollView(
-              physics: BouncingScrollPhysics(),
+              physics: const BouncingScrollPhysics(),
               child: Padding(
                 padding: const EdgeInsets.all(30.0),
                 child: Column(

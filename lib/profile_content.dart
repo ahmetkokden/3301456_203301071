@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class ProfileContent extends StatelessWidget {
-  ProfileContent({
+  const ProfileContent({
     Key? key,
     required this.title,
     required this.title1,
@@ -13,7 +13,7 @@ class ProfileContent extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Profil"),
+        title: const Text("Profil"),
         backgroundColor: Colors.white,
         foregroundColor: Colors.black,
       ),
@@ -29,7 +29,7 @@ class ProfileContent extends StatelessWidget {
                 Container(
                   child: Text(
                     title,
-                    style: TextStyle(
+                    style: const TextStyle(
                       color: Colors.black,
                       fontSize: 25,
                       fontFamily: "Poppins",
@@ -37,7 +37,7 @@ class ProfileContent extends StatelessWidget {
                     ),
                   ),
                 ),
-                Divider(
+                const Divider(
                   color: Colors.black,
                   height: 45,
                 ),
@@ -45,7 +45,7 @@ class ProfileContent extends StatelessWidget {
                   child: Text(
                     title1,
                     textAlign: TextAlign.center,
-                    style: TextStyle(
+                    style: const TextStyle(
                       color: Colors.black,
                       fontWeight: FontWeight.w400,
                       fontFamily: "Poppins",

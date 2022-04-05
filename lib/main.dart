@@ -10,7 +10,7 @@ import 'splash_screen.dart';
 import 'home.dart';
 import 'help_support.dart';
 
-void main() => runApp(Catchrop());
+void main() => runApp(const Catchrop());
 
 class Catchrop extends StatelessWidget {
   const Catchrop({Key? key}) : super(key: key);
@@ -21,16 +21,16 @@ class Catchrop extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       initialRoute: "/",
       routes: {
-        "/": (context) => splash_screen(),
-        "/login": (context) => login(),
-        "/register": (context) => register(),
-        "/home": (context) => home(),
-        "/bottom_navigation_bar": (context) => bottom_navigation_bar(),
-        "/learn": (context) => learn(),
-        "/market": (context) => market(),
-        "/airdrop": (context) => airdrop(),
-        "/profile": (context) => profile(),
-        "/help_support": (context) => help_support(),
+        "/": (context) => const splash_screen(),
+        "/login": (context) => const login(),
+        "/register": (context) => const register(),
+        "/home": (context) => const home(),
+        "/bottom_navigation_bar": (context) => const bottom_navigation_bar(),
+        "/learn": (context) => const learn(),
+        "/market": (context) => const market(),
+        "/airdrop": (context) => const airdrop(),
+        "/profile": (context) => const profile(),
+        "/help_support": (context) => const help_support(),
       },
       title: "Catchrop",
     );

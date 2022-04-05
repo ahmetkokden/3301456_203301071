@@ -15,7 +15,7 @@ class _homeState extends State<home> {
     return Scaffold(
       body: SafeArea(
         child: SingleChildScrollView(
-          physics: BouncingScrollPhysics(),
+          physics: const BouncingScrollPhysics(),
           child: Padding(
             padding: const EdgeInsets.fromLTRB(15, 0, 15, 0),
             child: Column(
@@ -25,9 +25,9 @@ class _homeState extends State<home> {
                   leading: IconButton(
                     iconSize: 35,
                     onPressed: () => Navigator.pushNamed(context, "/login"),
-                    icon: Icon(Icons.account_circle),
+                    icon: const Icon(Icons.account_circle),
                   ),
-                  title: Text(
+                  title: const Text(
                     "Hoşgelin,",
                     style: TextStyle(
                       color: Colors.grey,
@@ -36,7 +36,7 @@ class _homeState extends State<home> {
                   ),
                   subtitle: Text(
                     register.t1.text.toString(),
-                    style: TextStyle(
+                    style: const TextStyle(
                       color: Colors.black,
                       fontSize: 20,
                     ),
@@ -45,7 +45,7 @@ class _homeState extends State<home> {
                     onPressed: () => showDialog(
                       context: context,
                       builder: (BuildContext context) {
-                        return AlertDialog(
+                        return const AlertDialog(
                           title: Text(
                             "Bildirimler",
                             textAlign: TextAlign.center,
@@ -68,7 +68,7 @@ class _homeState extends State<home> {
                         );
                       },
                     ),
-                    icon: Icon(
+                    icon: const Icon(
                       Icons.notifications_none,
                       size: 24,
                     ),
@@ -77,7 +77,7 @@ class _homeState extends State<home> {
                 Container(
                   decoration: BoxDecoration(
                     color: Colors.black,
-                    borderRadius: BorderRadius.only(
+                    borderRadius: const BorderRadius.only(
                         topLeft: Radius.circular(17),
                         topRight: Radius.circular(17),
                         bottomLeft: Radius.circular(17),
@@ -87,7 +87,7 @@ class _homeState extends State<home> {
                         color: Colors.grey.withOpacity(0.5),
                         spreadRadius: 5,
                         blurRadius: 7,
-                        offset: Offset(0, 3), // changes position of shadow
+                        offset: const Offset(0, 3), // changes position of shadow
                       ),
                     ],
                   ),
@@ -95,17 +95,17 @@ class _homeState extends State<home> {
                   child: Image.asset("assets/images/banner.png",
                       fit: BoxFit.cover),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 20,
                 ),
-                Text("Piyasalar",
+                const Text("Piyasalar",
                     style: TextStyle(
                       color: Colors.black,
                       fontSize: 20,
                       fontFamily: "AbhayaLibre",
                       fontWeight: FontWeight.w600,
                     )),
-                SizedBox(
+                const SizedBox(
                   height: 10,
                 ),
                 coin_get(
@@ -199,10 +199,10 @@ coin_get(
   var _color,
 ) {
   return Container(
-    margin: EdgeInsets.only(bottom: 10),
+    margin: const EdgeInsets.only(bottom: 10),
     decoration: BoxDecoration(
       color: Colors.white,
-      borderRadius: BorderRadius.only(
+      borderRadius: const BorderRadius.only(
           topLeft: Radius.circular(10),
           topRight: Radius.circular(10),
           bottomLeft: Radius.circular(10),
@@ -212,7 +212,7 @@ coin_get(
           color: Colors.grey.withOpacity(0.24),
           spreadRadius: 5,
           blurRadius: 5,
-          offset: Offset(0, 3),
+          offset: const Offset(0, 3),
         ),
       ],
     ),
@@ -225,14 +225,14 @@ coin_get(
           children: [
             Text(
               coin_name,
-              style: TextStyle(
+              style: const TextStyle(
                   color: Colors.black,
                   fontFamily: "Poppins",
                   fontWeight: FontWeight.w400,
                   fontSize: 16),
             ),
             Container(
-              margin: EdgeInsets.only(top: 5),
+              margin: const EdgeInsets.only(top: 5),
               child: Image.asset(image_2),
             ),
           ],
@@ -252,7 +252,7 @@ coin_get(
           children: [
             Text(
               price,
-              style: TextStyle(
+              style: const TextStyle(
                 color: Colors.black,
                 fontFamily: "Poppins",
                 fontSize: 16,

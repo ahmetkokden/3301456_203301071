@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'register.dart';
 
 class login extends StatefulWidget {
-  login({Key? key}) : super(key: key);
+  const login({Key? key}) : super(key: key);
 
   static TextEditingController s1 = TextEditingController();
   static TextEditingController s2 = TextEditingController();
@@ -27,7 +27,7 @@ class _loginState extends State<login> {
                 children: [
                   Container(
                     child: Column(
-                      children: [
+                      children: const [
                         Text(
                           "Giriş Yap",
                           style: TextStyle(
@@ -50,7 +50,7 @@ class _loginState extends State<login> {
                       ],
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 30,
                   ),
                   Container(
@@ -59,7 +59,7 @@ class _loginState extends State<login> {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         TextField(
-                          decoration: InputDecoration(
+                          decoration: const InputDecoration(
                             isDense: true,
                             border: OutlineInputBorder(),
                             labelText: "E-posta",
@@ -76,12 +76,12 @@ class _loginState extends State<login> {
                           ),
                           controller: login.s1,
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 10,
                         ),
                         TextField(
                           obscureText: true,
-                          decoration: InputDecoration(
+                          decoration: const InputDecoration(
                             isDense: true,
                             border: OutlineInputBorder(),
                             labelText: "Şifre",
@@ -101,7 +101,7 @@ class _loginState extends State<login> {
                       ],
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 32,
                   ),
                   Container(
@@ -120,7 +120,7 @@ class _loginState extends State<login> {
                                     context, "/bottom_navigation_bar");
                               }
                             },
-                            child: Text(
+                            child: const Text(
                               "Giriş Yap",
                               style: TextStyle(
                                 color: Colors.white,
@@ -134,7 +134,7 @@ class _loginState extends State<login> {
                             ),
                           ),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 12,
                         ),
                         SizedBox(
@@ -151,7 +151,7 @@ class _loginState extends State<login> {
                               Navigator.pushNamed(
                                   context, "/bottom_navigation_bar");
                             },
-                            child: Text(
+                            child: const Text(
                               "Misafir Olarak Devam Et",
                               style: TextStyle(
                                 color: Colors.white,
@@ -165,14 +165,14 @@ class _loginState extends State<login> {
                             ),
                           ),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 24,
                         ),
                         Container(
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
-                              Text(
+                              const Text(
                                 "Üye Değil misiniz?",
                                 style: TextStyle(
                                   fontSize: 12,
@@ -183,7 +183,7 @@ class _loginState extends State<login> {
                               TextButton(
                                 onPressed: () =>
                                     Navigator.pushNamed(context, "/register"),
-                                child: Text(
+                                child: const Text(
                                   "Kayıt Ol",
                                   style: TextStyle(
                                     color: Colors.black,
@@ -199,7 +199,7 @@ class _loginState extends State<login> {
                       ],
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 24,
                   ),
                 ],

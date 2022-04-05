@@ -9,7 +9,7 @@ class learn extends StatelessWidget {
     return Scaffold(
       body: SafeArea(
         child: SingleChildScrollView(
-          physics: BouncingScrollPhysics(),
+          physics: const BouncingScrollPhysics(),
           child: Padding(
             padding: const EdgeInsets.fromLTRB(16, 10, 23, 0),
             child: Column(
@@ -22,7 +22,7 @@ class learn extends StatelessWidget {
                       onTap: () => Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => BlogPage(
+                          builder: (context) => const BlogPage(
                             title: "Catchrop Nedir",
                             text: "Öğren",
                             title2: "Yazar : Erkan Çelik",
@@ -35,10 +35,10 @@ class learn extends StatelessWidget {
                         ),
                       ),
                       child: Container(
-                        margin: EdgeInsets.only(left: 7),
+                        margin: const EdgeInsets.only(left: 7),
                         width: double.infinity,
                         height: 230,
-                        decoration: BoxDecoration(
+                        decoration: const BoxDecoration(
                           color: Colors.black,
                           borderRadius: BorderRadius.only(
                               topLeft: Radius.circular(24),
@@ -55,16 +55,16 @@ class learn extends StatelessWidget {
                         ),
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 15,
                     ),
                     Container(
-                      margin: EdgeInsets.only(left: 7),
+                      margin: const EdgeInsets.only(left: 7),
                       height: 19,
                       decoration: BoxDecoration(
-                          color: Color(0xFF303030),
+                          color: const Color(0xFF303030),
                           borderRadius: BorderRadius.circular(4)),
-                      child: ElevatedButton(
+                      child: const ElevatedButton(
                         onPressed: null,
                         child: Text(
                           "Cathcrop Nedir?",
@@ -77,7 +77,7 @@ class learn extends StatelessWidget {
                         ),
                       ),
                     ),
-                    TextButton(
+                    const TextButton(
                       onPressed: null,
                       child: Text(
                         "Catchrop, 23 Mart 2022 tarihinde kurulan dünyanın en iyi bitcoin ve kriptopara alım satım platformudur.",
@@ -89,7 +89,7 @@ class learn extends StatelessWidget {
                 Container(
                   width: double.infinity,
                   child: SingleChildScrollView(
-                    physics: BouncingScrollPhysics(),
+                    physics: const BouncingScrollPhysics(),
                     scrollDirection: Axis.horizontal,
                     child: Row(
                       children: [
@@ -173,7 +173,7 @@ content_get(
       ),
     ),
     child: Container(
-      margin: EdgeInsets.only(left: 7, right: 20, bottom: 30, top: 10),
+      margin: const EdgeInsets.only(left: 7, right: 20, bottom: 30, top: 10),
       width: 330,
       height: 400,
       decoration: BoxDecoration(
@@ -191,14 +191,14 @@ content_get(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Container(
-              padding: EdgeInsets.all(4),
-              margin: EdgeInsets.only(left: 15),
+              padding: const EdgeInsets.all(4),
+              margin: const EdgeInsets.only(left: 15),
               decoration: BoxDecoration(
-                  color: Color(0xFF303030),
+                  color: const Color(0xFF303030),
                   borderRadius: BorderRadius.circular(4)),
               child: Text(
                 toptext,
-                style: TextStyle(
+                style: const TextStyle(
                   color: Colors.white,
                   fontFamily: "Poppins",
                   fontSize: 10,
@@ -206,17 +206,17 @@ content_get(
                 ),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 180,
             ),
             Container(
-              margin: EdgeInsets.only(left: 15),
+              margin: const EdgeInsets.only(left: 15),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
                     bodytext1,
-                    style: TextStyle(
+                    style: const TextStyle(
                       color: Colors.white,
                       fontFamily: "Poppins",
                       fontSize: 18,
@@ -226,17 +226,17 @@ content_get(
                   Container(
                     child: Row(
                       children: [
-                        Icon(
+                        const Icon(
                           Icons.watch_later_outlined,
                           size: 15,
                           color: Color(0xFF8C8C8C),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           width: 2,
                         ),
                         Text(
                           bodytext2,
-                          style: TextStyle(
+                          style: const TextStyle(
                             color: Color(0xFF8C8C8C),
                             fontFamily: "Poppins",
                             fontSize: 10,
@@ -246,18 +246,18 @@ content_get(
                       ],
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 15,
                   ),
                   Container(
-                    padding: EdgeInsets.all(4.0),
+                    padding: const EdgeInsets.all(4.0),
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(4),
                       color: Colors.black,
                     ),
                     child: Text(
                       bodytext3,
-                      style: TextStyle(
+                      style: const TextStyle(
                         color: Colors.white,
                         fontFamily: "Poppins",
                         fontSize: 10,
@@ -270,14 +270,14 @@ content_get(
             ),
             Container(
               child: ListTile(
-                leading: Icon(
+                leading: const Icon(
                   Icons.account_circle,
                   color: Colors.white,
                   size: 38,
                 ),
                 title: Text(
                   bottomtext1,
-                  style: TextStyle(
+                  style: const TextStyle(
                     color: Colors.white,
                     fontFamily: "Poppins",
                     fontSize: 16,
@@ -285,7 +285,7 @@ content_get(
                 ),
                 subtitle: Text(
                   bottomtext2,
-                  style: TextStyle(
+                  style: const TextStyle(
                     color: Colors.grey,
                     fontSize: 10,
                     fontFamily: "Poppins",

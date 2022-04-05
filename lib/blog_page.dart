@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 
 class BlogPage extends StatelessWidget {
-  BlogPage({
+  const BlogPage({
     Key? key,
     required this.imagePath,
     required this.title,
@@ -31,9 +31,9 @@ class BlogPage extends StatelessWidget {
       ),
       body: SafeArea(
         child: Padding(
-          padding: EdgeInsets.all(30),
+          padding: const EdgeInsets.all(30),
           child: SingleChildScrollView(
-            physics: BouncingScrollPhysics(),
+            physics: const BouncingScrollPhysics(),
             child: Column(
               children: [
                 Container(
@@ -48,7 +48,7 @@ class BlogPage extends StatelessWidget {
                             .of(context)
                             .size
                             .height * 0.28,
-                        margin: EdgeInsets.only(bottom: 20),
+                        margin: const EdgeInsets.only(bottom: 20),
                         decoration: BoxDecoration(
                             image: DecorationImage(
                                 image: AssetImage(imagePath)
@@ -57,25 +57,25 @@ class BlogPage extends StatelessWidget {
                       ),
                       Text(
                         title,
-                        style: TextStyle(
+                        style: const TextStyle(
                           color: Colors.black,
                           fontFamily: "Lato",
                           fontSize: 18,
                           fontWeight: FontWeight.bold,
                         ),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 10,
                       ),
                       Text(
                         title2,
-                        style: TextStyle(
+                        style: const TextStyle(
                           color: Colors.black,
                           fontFamily: "Poppinsz",
                           fontSize: 12,
                         ),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 10,
                       ),
                       RatingBar.builder(
@@ -85,20 +85,19 @@ class BlogPage extends StatelessWidget {
                         direction: Axis.horizontal,
                         allowHalfRating: true,
                         itemCount: 5,
-                        itemPadding: EdgeInsets.symmetric(horizontal: 4.0),
+                        itemPadding: const EdgeInsets.symmetric(horizontal: 4.0),
                         itemBuilder: (context, _) =>
-                            Icon(
+                            const Icon(
                               Icons.star,
                               color: Colors.amber,
                             ),
                         onRatingUpdate: (rate) {
-                          print(rate);
                         },
                       )
                     ],
                   ),
                 ),
-                Divider(
+                const Divider(
                   color: Colors.black,
                   height: 5,
                 ),
@@ -110,7 +109,7 @@ class BlogPage extends StatelessWidget {
                         child: Text(
                           blogContent,
                           textAlign: TextAlign.center,
-                          style: TextStyle(
+                          style: const TextStyle(
                             color: Colors.black,
                             fontSize: 14,
                             fontFamily: "Poppins",

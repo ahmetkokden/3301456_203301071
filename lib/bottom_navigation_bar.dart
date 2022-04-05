@@ -14,14 +14,14 @@ class bottom_navigation_bar extends StatefulWidget {
 
 class _bottom_navigation_barState extends State<bottom_navigation_bar> {
   int current_page = 0;
-  Widget currentPage = home();
+  Widget currentPage = const home();
 
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
     return Scaffold(
       bottomNavigationBar: BottomNavigationBar(
-        items: [
+        items: const [
           BottomNavigationBarItem(
             icon: Icon(Icons.home),
             label: "AnaSayfa",
@@ -49,14 +49,14 @@ class _bottom_navigation_barState extends State<bottom_navigation_bar> {
         currentIndex: current_page,
         selectedItemColor: Colors.black,
         unselectedItemColor: Colors.grey,
-        onTap: (int) {
+        onTap: (int val) {
           setState(() {
-            current_page = int;
-            if (current_page == 0) currentPage = home();
-            if (current_page == 1) currentPage = learn();
-            if (current_page == 2) currentPage = market();
-            if (current_page == 3) currentPage = airdrop();
-            if (current_page == 4) currentPage = profile();
+            current_page = val;
+            if (current_page == 0) currentPage = const home();
+            if (current_page == 1) currentPage = const learn();
+            if (current_page == 2) currentPage = const market();
+            if (current_page == 3) currentPage = const airdrop();
+            if (current_page == 4) currentPage = const profile();
           });
         },
       ),

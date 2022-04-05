@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class register extends StatefulWidget {
-  register({Key? key}) : super(key: key);
+  const register({Key? key}) : super(key: key);
 
   static TextEditingController t1 = TextEditingController();
   static TextEditingController t2 = TextEditingController();
@@ -27,7 +27,7 @@ class _registerState extends State<register> {
                 children: [
                   Container(
                     child: Column(
-                      children: [
+                      children: const [
                         Text(
                           "Kayıt Ol",
                           style: TextStyle(
@@ -58,7 +58,7 @@ class _registerState extends State<register> {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         TextField(
-                          decoration: InputDecoration(
+                          decoration: const InputDecoration(
                             isDense: true,
                             border: OutlineInputBorder(),
                             labelText: "Ad Soyad",
@@ -75,11 +75,11 @@ class _registerState extends State<register> {
                           ),
                           controller: register.t1,
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 15,
                         ),
                         TextField(
-                          decoration: InputDecoration(
+                          decoration: const InputDecoration(
                             isDense: true,
                             border: OutlineInputBorder(),
                             labelText: "E-posta",
@@ -96,11 +96,11 @@ class _registerState extends State<register> {
                           ),
                           controller: register.t2,
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 15,
                         ),
                         TextField(
-                          decoration: InputDecoration(
+                          decoration: const InputDecoration(
                             isDense: true,
                             border: OutlineInputBorder(),
                             labelText: "Telefon Numarası",
@@ -117,12 +117,12 @@ class _registerState extends State<register> {
                           ),
                           controller: register.t3,
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 15,
                         ),
                         TextField(
                           obscureText: true,
-                          decoration: InputDecoration(
+                          decoration: const InputDecoration(
                             isDense: true,
                             border: OutlineInputBorder(),
                             labelText: "Şifre",
@@ -142,7 +142,7 @@ class _registerState extends State<register> {
                       ],
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 32,
                   ),
                   Container(
@@ -154,7 +154,7 @@ class _registerState extends State<register> {
                           child: ElevatedButton(
                             onPressed: () =>
                                 Navigator.popAndPushNamed(context, "/login"),
-                            child: Text(
+                            child: const Text(
                               "Kayıt Ol",
                               style: TextStyle(
                                 color: Colors.white,
@@ -168,14 +168,14 @@ class _registerState extends State<register> {
                             ),
                           ),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 14,
                         ),
                         Container(
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
-                              Text(
+                              const Text(
                                 "Zaten Üye misiniz?",
                                 style: TextStyle(
                                   fontSize: 12,
@@ -186,7 +186,7 @@ class _registerState extends State<register> {
                               TextButton(
                                 onPressed: () =>
                                     Navigator.popAndPushNamed(context, "/login"),
-                                child: Text(
+                                child: const Text(
                                   "Giriş Yap",
                                   style: TextStyle(
                                     color: Colors.black,

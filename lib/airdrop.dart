@@ -84,7 +84,7 @@ airdrop_get(
   String blogContent,
 ) {
   return Container(
-    margin: EdgeInsets.only(bottom: 11),
+    margin: const EdgeInsets.only(bottom: 11),
     height: _height,
     width: double.infinity,
     decoration: BoxDecoration(
@@ -92,7 +92,7 @@ airdrop_get(
         image: AssetImage(image),
         fit: BoxFit.cover,
       ),
-      borderRadius: BorderRadius.only(
+      borderRadius: const BorderRadius.only(
           topLeft: Radius.circular(24),
           topRight: Radius.circular(24),
           bottomLeft: Radius.circular(24),
@@ -102,7 +102,7 @@ airdrop_get(
           color: Colors.grey.withOpacity(0.7),
           spreadRadius: 3,
           blurRadius: 7,
-          offset: Offset(1, 3), // changes position of shadow
+          offset: const Offset(1, 3), // changes position of shadow
         ),
       ],
     ),
@@ -114,14 +114,14 @@ airdrop_get(
         children: [
           Container(
             child: Container(
-              padding: EdgeInsets.all(5),
+              padding: const EdgeInsets.all(5),
               decoration: BoxDecoration(
                 color: Colors.grey[700],
                 borderRadius: BorderRadius.circular(4),
               ),
               child: Text(
                 text1,
-                style: TextStyle(
+                style: const TextStyle(
                   color: Colors.white,
                   fontSize: 12,
                   fontFamily: "Abhaya_Libre",
@@ -151,7 +151,7 @@ airdrop_get(
                                 blogContent: blogContent,
                               )),
                     ),
-                child: Text(
+                child: const Text(
                   "KATIL",
                   style: TextStyle(
                     color: Colors.black,

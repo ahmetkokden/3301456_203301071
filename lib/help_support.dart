@@ -7,13 +7,13 @@ class help_support extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Profil"),
+        title: const Text("Profil"),
         backgroundColor: Colors.white,
         foregroundColor: Colors.black,
       ),
       body: SafeArea(
         child: SingleChildScrollView(
-          physics: BouncingScrollPhysics(),
+          physics: const BouncingScrollPhysics(),
           child: Padding(
             padding: const EdgeInsets.only(left: 20, right: 20),
             child: Container(
@@ -24,7 +24,7 @@ class help_support extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Container(
-                    child: Text(
+                    child: const Text(
                       "Bize Ulaşın",
                       style: TextStyle(
                           color: Colors.black,
@@ -33,14 +33,14 @@ class help_support extends StatelessWidget {
                           fontWeight: FontWeight.bold),
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 15,
                   ),
                   Container(
                     child: Column(
                       children: [
                         Container(
-                          child: TextField(
+                          child: const TextField(
                             decoration: InputDecoration(
                                 isDense: true,
                                 border: OutlineInputBorder(),
@@ -56,11 +56,11 @@ class help_support extends StatelessWidget {
                                 ))),
                           ),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 15,
                         ),
                         Container(
-                          child: TextField(
+                          child: const TextField(
                             decoration: InputDecoration(
                                 isDense: true,
                                 border: OutlineInputBorder(),
@@ -76,11 +76,11 @@ class help_support extends StatelessWidget {
                                 ))),
                           ),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 15,
                         ),
                         Container(
-                          child: TextField(
+                          child: const TextField(
                             decoration: InputDecoration(
                                 isDense: true,
                                 border: OutlineInputBorder(),
@@ -96,11 +96,11 @@ class help_support extends StatelessWidget {
                                 ))),
                           ),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 15,
                         ),
                         Container(
-                          child: TextField(
+                          child: const TextField(
                             maxLines: 7,
                             minLines: 6,
                             decoration: InputDecoration(
@@ -121,7 +121,7 @@ class help_support extends StatelessWidget {
                       ],
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 15,
                   ),
                   Container(
@@ -132,7 +132,7 @@ class help_support extends StatelessWidget {
                           onTap: () => showDialog(
                             context: context,
                             builder: (BuildContext context) {
-                              return AlertDialog(
+                              return const AlertDialog(
                                 title: Text(
                                   "Gönderildi",
                                   textAlign: TextAlign.center,
@@ -157,7 +157,7 @@ class help_support extends StatelessWidget {
                           ),
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
+                            children: const [
                               Icon(
                                 Icons.send_sharp,
                                 size: 34,

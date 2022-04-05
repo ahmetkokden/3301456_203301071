@@ -11,7 +11,7 @@ class _splash_screenState extends State<splash_screen> {
   @override
   void initState() {
     super.initState();
-    Future.delayed(Duration(seconds: 4), () {
+    Future.delayed(const Duration(seconds: 4), () {
       Navigator.popAndPushNamed(context, "/bottom_navigation_bar");
     });
   }
@@ -25,7 +25,7 @@ class _splash_screenState extends State<splash_screen> {
         child: Container(
           width: MediaQuery.of(context).size.width,
           height: MediaQuery.of(context).size.height,
-          decoration: BoxDecoration(
+          decoration: const BoxDecoration(
             image: DecorationImage(
               image: AssetImage("assets/images/splash_screen.gif"),
               fit: BoxFit.contain,

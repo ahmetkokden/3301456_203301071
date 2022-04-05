@@ -19,7 +19,7 @@ class profile extends StatelessWidget {
                   height: 239,
                   decoration: BoxDecoration(
                       color: Colors.black,
-                      image: DecorationImage(
+                      image: const DecorationImage(
                         image: AssetImage(
                           "assets/images/profile_top_banner.png",
                         ),
@@ -29,7 +29,7 @@ class profile extends StatelessWidget {
                   child: Column(
                     children: [
                       Container(
-                        margin: EdgeInsets.only(top: 25),
+                        margin: const EdgeInsets.only(top: 25),
                         width: 101,
                         height: 101,
                         decoration: BoxDecoration(
@@ -38,7 +38,7 @@ class profile extends StatelessWidget {
                       ),
                       Text(
                         register.t1.text.toString(),
-                        style: TextStyle(
+                        style: const TextStyle(
                           color: Colors.white,
                           fontSize: 20,
                           fontFamily: "Poppins",
@@ -47,7 +47,7 @@ class profile extends StatelessWidget {
                       ),
                       Text(
                         register.t2.text.toString(),
-                        style: TextStyle(
+                        style: const TextStyle(
                           color: Colors.white,
                           fontSize: 12,
                           fontFamily: "Poppins",
@@ -56,7 +56,7 @@ class profile extends StatelessWidget {
                       ),
                       Text(
                         register.t3.text.toString(),
-                        style: TextStyle(
+                        style: const TextStyle(
                           color: Colors.white,
                           fontSize: 12,
                           fontFamily: "Poppins",
@@ -66,7 +66,7 @@ class profile extends StatelessWidget {
                     ],
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 26,
                 ),
                 Container(
@@ -76,7 +76,7 @@ class profile extends StatelessWidget {
                         onTap: () => showDialog(
                           context: context,
                           builder: (BuildContext context) {
-                            return AlertDialog(
+                            return const AlertDialog(
                               title: Text(
                                 "Bildirimler",
                                 textAlign: TextAlign.center,
@@ -99,7 +99,7 @@ class profile extends StatelessWidget {
                             );
                           },
                         ),
-                        child: ListTile(
+                        child: const ListTile(
                           leading: Icon(
                             Icons.notifications_none,
                             size: 30,
@@ -132,7 +132,7 @@ class profile extends StatelessWidget {
                       InkWell(
                         onTap: () =>
                             Navigator.pushNamed(context, "/help_support"),
-                        child: ListTile(
+                        child: const ListTile(
                           leading: Icon(
                             Icons.help_outline_outlined,
                             size: 30,
@@ -170,20 +170,20 @@ class profile extends StatelessWidget {
                       InkWell(
                         onTap: () => Navigator.pushNamed(context, "/login"),
                         child: ListTile(
-                          leading: Icon(
+                          leading: const Icon(
                             Icons.login_outlined,
                             size: 30,
                             color: Colors.black,
                           ),
                           title: Text(
                             register.t1.text.toString()==''?"Giriş Yap":"Çıkış Yap",
-                            style: TextStyle(
+                            style: const TextStyle(
                               color: Colors.black,
                               fontSize: 16,
                               fontFamily: "Poppins",
                             ),
                           ),
-                          trailing: Icon(
+                          trailing: const Icon(
                             Icons.arrow_forward_ios_outlined,
                             size: 20,
                           ),
@@ -227,13 +227,13 @@ menu_get(
         ),
         title: Text(
           title,
-          style: TextStyle(
+          style: const TextStyle(
             color: Colors.black,
             fontSize: 16,
             fontFamily: "Poppins",
           ),
         ),
-        trailing: Icon(
+        trailing: const Icon(
           Icons.arrow_forward_ios_outlined,
           size: 20,
         ),
