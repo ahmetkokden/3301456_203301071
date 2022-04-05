@@ -18,7 +18,6 @@ class _bottom_navigation_barState extends State<bottom_navigation_bar> {
 
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
     return Scaffold(
       bottomNavigationBar: BottomNavigationBar(
         items: const [
