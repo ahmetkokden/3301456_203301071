@@ -1,4 +1,4 @@
-import 'package:cathcrop_beta/profile_content.dart';
+import 'package:catchrop/profile_content.dart';
 import 'package:flutter/material.dart';
 import 'register.dart';
 

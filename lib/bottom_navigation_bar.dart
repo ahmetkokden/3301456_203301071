@@ -1,4 +1,4 @@
-import 'package:cathcrop_beta/profile.dart';
+import 'package:catchrop/profile.dart';
 import 'package:flutter/material.dart';
 import 'airdrop.dart';
 import 'home.dart';

@@ -1,4 +1,4 @@
-package com.example.catchrop_beta
+package com.example.catchrop
 
 import io.flutter.embedding.android.FlutterActivity
 

@@ -1,4 +1,4 @@
-# catchrop_beta
+# catchrop
 
 A new Flutter project.
 

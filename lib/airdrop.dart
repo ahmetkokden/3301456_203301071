@@ -1,4 +1,4 @@
-import 'package:cathcrop_beta/blog_page.dart';
+import 'package:catchrop/blog_page.dart';
 import 'package:flutter/material.dart';
 
 class airdrop extends StatelessWidget {

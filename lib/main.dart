@@ -1,5 +1,5 @@
-import 'package:cathcrop_beta/profile.dart';
-import 'package:cathcrop_beta/register.dart';
+import 'package:catchrop/profile.dart';
+import 'package:catchrop/register.dart';
 import 'package:flutter/material.dart';
 import 'airdrop.dart';
 import 'bottom_navigation_bar.dart';
