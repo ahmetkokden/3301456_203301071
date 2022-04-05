@@ -1,7 +1,6 @@
 # Catchrop
 
-![Workout View](assets/screenshot/1.png)
-
+<img src="https://github.com/erkanrcelik/3301456_203301071/blob/main/assets/screenshot/1.png" width="150" height="280">
 ## Getting Started
 
 This project is a starting point for a Flutter application.
