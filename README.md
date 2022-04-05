@@ -1,6 +1,6 @@
 # Catchrop
 
-A new Flutter project.
+![Workout View](assets/screenshots/1.png)
 
 ## Getting Started
 
