@@ -1,6 +1,6 @@
 # Catchrop
 
-![Workout View](assets/screenshots/1.png)
+![Workout View](assets/screenshot/1.png)
 
 ## Getting Started
 
