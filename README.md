@@ -1,15 +1,6 @@
 # Catchrop
 
-<img src="https://github.com/erkanrcelik/3301456_203301071/blob/main/assets/screenshot/1.png" width="150" height="320">
-<img src="https://github.com/erkanrcelik/3301456_203301071/blob/main/assets/screenshot/2.png" width="150" height="320">
-<img src="https://github.com/erkanrcelik/3301456_203301071/blob/main/assets/screenshot/3.png" width="150" height="320">
-<img src="https://github.com/erkanrcelik/3301456_203301071/blob/main/assets/screenshot/4.png" width="150" height="320">
-<img src="https://github.com/erkanrcelik/3301456_203301071/blob/main/assets/screenshot/5.png" width="150" height="320">
-<img src="https://github.com/erkanrcelik/3301456_203301071/blob/main/assets/screenshot/6.png" width="150" height="320">
-<img src="https://github.com/erkanrcelik/3301456_203301071/blob/main/assets/screenshot/7.png" width="150" height="320">
-<img src="https://github.com/erkanrcelik/3301456_203301071/blob/main/assets/screenshot/8.png" width="150" height="320">
-<img src="https://github.com/erkanrcelik/3301456_203301071/blob/main/assets/screenshot/9.png" width="150" height="320">
-<img src="https://github.com/erkanrcelik/3301456_203301071/blob/main/assets/screenshot/10.png" width="150" height="320">
+<img src="https://github.com/erkanrcelik/3301456_203301071/blob/main/assets/screenshot/1.png" width="150" height="320"><img src="https://github.com/erkanrcelik/3301456_203301071/blob/main/assets/screenshot/2.png" width="150" height="320"><img src="https://github.com/erkanrcelik/3301456_203301071/blob/main/assets/screenshot/3.png" width="150" height="320"><img src="https://github.com/erkanrcelik/3301456_203301071/blob/main/assets/screenshot/4.png" width="150" height="320"><img src="https://github.com/erkanrcelik/3301456_203301071/blob/main/assets/screenshot/5.png" width="150" height="320"><img src="https://github.com/erkanrcelik/3301456_203301071/blob/main/assets/screenshot/6.png" width="150" height="320"><img src="https://github.com/erkanrcelik/3301456_203301071/blob/main/assets/screenshot/7.png" width="150" height="320"><img src="https://github.com/erkanrcelik/3301456_203301071/blob/main/assets/screenshot/8.png" width="150" height="320"><img src="https://github.com/erkanrcelik/3301456_203301071/blob/main/assets/screenshot/9.png" width="150" height="320"><img src="https://github.com/erkanrcelik/3301456_203301071/blob/main/assets/screenshot/10.png" width="150" height="320">
 
 
 ## Getting Started
